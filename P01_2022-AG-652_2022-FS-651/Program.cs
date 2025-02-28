@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Agregar servicios al contenedor.
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("equiposDbConnection")));
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

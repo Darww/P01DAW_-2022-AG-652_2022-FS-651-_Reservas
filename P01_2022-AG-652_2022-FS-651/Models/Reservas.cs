@@ -14,7 +14,7 @@ namespace P01_2022_AG_652_2022_FS_651.Models
         [ForeignKey("Usuario")]
         public int UsuarioId { get; set; }
         public Usuarios Usuario { get; set; }
-        [ForeignKey("EspacioParqueo")]
+        [ForeignKey("EspaciosParqueo")]
         public int EspacioId { get; set; }
     }
 }
