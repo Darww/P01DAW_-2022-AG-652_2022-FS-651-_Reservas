@@ -5,7 +5,7 @@ public class AppDbContext : DbContext
 {
     public DbSet<Usuarios> Usuarios { get; set; }
     public DbSet<Sucursales> Sucursales { get; set; }
-    public DbSet<EspaciosParqueo> Espacios { get; set; }
+    public DbSet<EspaciosParqueo> EspaciosParqueo { get; set; }
     public DbSet<Reservas> Reservas { get; set; }
 
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
